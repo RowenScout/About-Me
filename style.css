@@ -1,0 +1,13 @@
+h1{
+  background-color: grey;
+}
+p {
+  border: 5px solid darkgrey;
+  background-color: grey;
+}
+.page-content {
+  font: comic;
+}
+
+#unique-p-tag{
+  //whatever here's some elements that will modify unique-p-tag. :P
