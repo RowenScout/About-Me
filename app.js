@@ -8,37 +8,37 @@ if (confirmed === true){
   console.log('User is not rumblin\' but too bad, we\'re doing it anyway. \:\)');
 }
 var name = prompt("text");
-if (name.toUpper === 'Y') {
-  console.log('User\'s choice was ' + name + '.'
+if (name.toUpperCase() === 'Y') {
+  console.log('User\'s choice was ' + name + '.')
   alert('Correct, next round.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question'}
+    alert('Wrong! Next question')}
 var name = prompt("text");
-if (name.toUpper === 'Y') {
-  console.log('User\'s choice was ' + name + '.' 
+if (name.toUpperCase() === 'Y') {
+  console.log('User\'s choice was ' + name + '.')
   alert('Correct, next round.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question'}
+    alert('Wrong! Next question')}
 var name = prompt("text");
-if (name.toUpper === 'Y') {
-  console.log('User\'s choice was ' + name + '.'
+if (name.toUpperCase() === 'Y') {
+  console.log('User\'s choice was ' + name + '.')
   alert('Correct, next round.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question'}
+    alert('Wrong! Next question')}
 var name = prompt("text");
-if (name.toUpper === 'Y') {
-  console.log('User\'s choice was ' + name + '.'
+if (name.toUpperCase() === 'Y') {
+  console.log('User\'s choice was ' + name + '.')
   alert('Correct, next round.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question'}
+    alert('Wrong! Next question')}
 var name = prompt("text");
-if (name.toUpper === 'Y') {
-  console.log('User\'s choice was ' + name + '.'
+if (name.toUpperCase() === 'Y') {
+  console.log('User\'s choice was ' + name + '.')
   alert('Correct, next round.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question'}
+    alert('Wrong! Last question.')}
