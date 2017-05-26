@@ -8,38 +8,38 @@ if (confirmed === true){
   console.log('User is not rumblin\' but too bad, we\'re doing it anyway. \:\)')
   alert('Too bad, we\'re doing it anyway.');
 }
-var name = prompt("In a standup fight, would you win against this developer?");
-if (name.toUpperCase() === 'Y') {
+var answer1 = prompt("In a standup fight, would you win against this developer?");
+if (answer1.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
   alert('You\'re probably right.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
     alert('Wrong! Next question')}
-var name = prompt("Is the developer's favorite color Purple?");
-if (name.toUpperCase() === 'Y') {
+var answer2 = prompt("Is the developer's favorite color Purple?");
+if (answer1.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
-  alert('Correct, next round.')}
+  alert('Correct, but I also like red a lot. Next round.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question')}
-var name = prompt("Is the developer a fan of chess?");
-if (name.toUpperCase() === 'Y') {
+    alert('Wrong! I freakin\' love purple')}
+var answer3 = prompt("Is the developer a fan of chess?");
+if (answer3.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
-  alert('Correct, next round.')}
+  alert('Correct, though I\'m only rated at 1000 Elo. Next round.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question')}
-var name = prompt("Does the developer love to rollerskate?");
-if (name.toUpperCase() === 'Y') {
+    alert('Wrong! Chess is life. Next question.')}
+var answer4 = prompt("Does the developer love to rollerskate?");
+if (answer4.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
   alert('Correct, the developer actually does roller derby. Next question.')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Next question')}
-var name = prompt("text");
-if (name.toUpperCase() === 'Y') {
+    alert('Wrong! Roller derby is life.')}
+var answer5 = prompt("What is the average windspeed velocity of an unlaiden swallow?");
+if (answer5.toUpperCase() === 'AFRICAN OR EUROPEAN?') {
   console.log('User\'s choice was ' + name + '.')
-  alert('Correct, next round.')}
+  alert('The developer was thrown to their doom by unseen forces. .')}
   else {
     console.log('User\'s input was incorrect or invalid.')
-    alert('Wrong! Last question.')}
+    alert('Wrong! You are thrown to your doom by unseen forces.')}
