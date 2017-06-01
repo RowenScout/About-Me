@@ -1,13 +1,42 @@
 h1{
-  background-color: grey;
+  text-align: center;
+  border: 0px, 25%, 0px, 25%;
+}
+.textcolor{
+  color: white;
+}
+body{
+  text-align: center;
+  background-image: url("TransPride.png");
+}
+img{
+  mix-blend-mode: multiply;
 }
 p {
-  border: 5px solid darkgrey;
-  background-color: grey;
+
 }
-.page-content {
-  font: comic;
+li {
+  text-align: center;
+  display: inline;
+  padding: 10px, 20em, 10%, 20em
+  }
+a{
+  color:white;
+  font-weight: bold;
+}
+a:link {
+    text-decoration: none;
 }
 
-#unique-p-tag{
-  //whatever here's some elements that will modify unique-p-tag. :P
+a:visited {
+    text-decoration: none;
+    color: hotpink;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}

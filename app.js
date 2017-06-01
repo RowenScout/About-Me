@@ -7,8 +7,8 @@ if (confirmed === true){
   alert('Let\'s begin!')
 } else {
   console.log('User is not rumblin\' but too bad, we\'re doing it anyway. \:\)')
-  alert('Too bad, we\'re doing it anyway.');
-}
+  alert('Too bad, we\'re doing it anyway.');}
+
 var answer1 = prompt("In a standup fight, would you win against this developer?");
 if (answer1.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
@@ -16,6 +16,7 @@ if (answer1.toUpperCase() === 'Y') {
   else {
     console.log('User\'s input was incorrect or invalid.')
     alert('You\'re probably right. The developer is pretty scrappy. Next question.')}
+
 var answer2 = prompt("Is the developer's favorite color Purple?");
 if (answer1.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
@@ -23,6 +24,7 @@ if (answer1.toUpperCase() === 'Y') {
   else {
     console.log('User\'s input was incorrect or invalid.')
     alert('Wrong! I freakin\' love purple. Next question.')}
+
 var answer3 = prompt("Is the developer a fan of chess?");
 if (answer3.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
@@ -30,6 +32,7 @@ if (answer3.toUpperCase() === 'Y') {
   else {
     console.log('User\'s input was incorrect or invalid.')
     alert('Wrong! Chess is life. Next question.')}
+
 var answer4 = prompt("Does the developer love to rollerskate?");
 if (answer4.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + name + '.')
@@ -37,6 +40,7 @@ if (answer4.toUpperCase() === 'Y') {
   else {
     console.log('User\'s input was incorrect or invalid.')
     alert('Wrong! Roller derby is life. Next question.')}
+
 var answer5 = prompt("What is the average windspeed velocity of an unlaiden swallow?");
 if (answer5.toUpperCase() === 'AFRICAN OR EUROPEAN?') {
   console.log('User\'s choice was ' + name + '.')
