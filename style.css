@@ -1,27 +1,57 @@
+*{
+  font-family: DejaVu Sans Mono;
+}
 h1{
   text-align: center;
   border: 0px, 25%, 0px, 25%;
+  margin-bottom: 0px;
+  padding-bottom:1px;
+  height: 30px;
+}
+hr{
+	border-top: 2px solid black;
+  margin-top: 0px;
+  margin-right: 33%;
+  margin-bottom: 1px;
+  margin-left: 33%;
+}
+p{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+ul{
+  margin-top: 2px;
+}
+dl{
+  text-align: left;
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
+dt{
+  font-weight: bolder;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+dd{
+  margin-top: 10px;
 }
 .textcolor{
-  color: white;
+  color: black;
 }
 body{
   text-align: center;
-  background-image: url("TransPride.png");
+  background-image: url("transstar.png");
 }
 img{
   mix-blend-mode: multiply;
 }
-p {
-
-}
-li {
+.navbar{
   text-align: center;
   display: inline;
-  padding: 10px, 20em, 10%, 20em
-  }
+}
 a{
-  color:white;
+  color:black;
   font-weight: bold;
 }
 a:link {
@@ -30,7 +60,7 @@ a:link {
 
 a:visited {
     text-decoration: none;
-    color: hotpink;
+    color: purple;
 }
 
 a:hover {
