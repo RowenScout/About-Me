@@ -14,20 +14,24 @@ if (confirmed === true) {
 }
 
 var answer1 = prompt('In a standup fight, would you win against this developer?');
+answer1 = answer1.slice(0, 1);
+console.log('User\'s choice was ' + answer1 + '.');
 if (answer1.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + answer1 + '.');
   alert('You\'re probably right. The developer is smol. Next question.');
   correct++;
   console.log('Correct=' + '' + correct);
 }else {
-  console.log('User\'s input was incorrect or invalid.');
+  console.log('User\'s choice was ' + answer1 + '.');
+  //console.log('User\'s input was incorrect or invalid.');
   alert('You\'re probably right. The developer is pretty scrappy. Next question.');
   correct++;
   console.log('Correct=' + '' + correct);
 }
 
 var answer2 = prompt("Is the developer's favorite color Purple?");
-if (answer1.toUpperCase() === 'Y') {
+answer2 = answer2.slice(0, 1);
+if (answer2.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + answer2 + '.');
   alert('Correct, but I also like red a lot. Next question.');
   correct++;
@@ -38,6 +42,7 @@ if (answer1.toUpperCase() === 'Y') {
 }
 
 var answer3 = prompt('Is the developer a fan of chess?');
+answer3 = answer3.slice(0, 1);
 if (answer3.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + answer3 + '.');
   alert('Correct, though I\'m only rated at 1000 Elo. Next question.');
@@ -49,6 +54,7 @@ if (answer3.toUpperCase() === 'Y') {
 }
 
 var answer4 = prompt('Does the developer love to rollerskate?');
+answer4 = answer4.slice(0, 1);
 if (answer4.toUpperCase() === 'Y') {
   console.log('User\'s choice was ' + answer4 + '.');
   alert('Correct, the developer actually does roller derby. Next question.');
@@ -126,6 +132,27 @@ while (answer != 20 && guessing === true) {
 }
 
 //Name that pokemon!
-var guesses =
-var pokemon;
-pokemon = ['golduck', 'honedge', 'doublade', 'aegislash', 'greninja', 'ninjask', 'shedinja', 'celesteela', 'mew', 'magnemite', 'magnezone', 'magneton', 'drowsee'];
+var guesses = 4;
+
+var pokemon = ['golduck', 'honedge', 'doublade', 'aegislash'];
+pokemon.push('greninja', 'ninjask', 'shedinja', 'celesteela');
+pokemon.push('mew', 'magnemite', 'magnezone', 'magneton', 'drowsee');
+console.log(pokemon);
+while (guesses > 0) {
+  var answer = prompt('Can you guess one of my favorite Pokemon?');
+  answer = answer.toLowerCase();
+  if (pokemon.indexOf(answer) === -1) {
+    guesses--;
+    console.log(guesses + ': user guess');
+    console.log(pokemon.indexOf(answer) + ': index');
+    console.log(answer + ': user answer');
+    alert('Nope! Try again. You have ' + guesses + ' guesses left.');
+  } else {
+    console.log('User guessed correctly!');
+    console.log(answer + ': user answer');
+    correct++;
+    alert('Wow! You\'re a Pokemon Master!');
+    guesses = 0;
+  }
+}
+alert('Congratuations! You got ' + correct + ' out of 7 answers correct!');
