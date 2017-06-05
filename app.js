@@ -157,4 +157,4 @@ while (guesses > 0) {
   }
 }
 
-alert('Congratuations! You got ' + correct + ' out of 7 answers correct!');
+document.write('Congratuations! You got ' + correct + ' out of 7 answers correct!');
