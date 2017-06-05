@@ -23,6 +23,7 @@ if (answer1.toUpperCase() === 'Y') {
   console.log('Correct=' + '' + correct);
 }else {
   console.log('User\'s choice was ' + answer1 + '.');
+
   //console.log('User\'s input was incorrect or invalid.');
   alert('You\'re probably right. The developer is pretty scrappy. Next question.');
   correct++;
@@ -155,4 +156,5 @@ while (guesses > 0) {
     guesses = 0;
   }
 }
+
 alert('Congratuations! You got ' + correct + ' out of 7 answers correct!');
