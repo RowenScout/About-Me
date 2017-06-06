@@ -38,7 +38,7 @@ function funct2(){
     console.log('User\'s choice was ' + answer2 + '.');
     alert('Correct, but I also like red a lot. Next question.');
     correct++;
-    console.log('Correct=' + '' + correct);
+    console.log('Correct= ' + correct);
   }else {
     console.log('User\'s input was incorrect or invalid.');
     alert('Wrong! I freakin\' love purple. Next question.');
@@ -112,9 +112,10 @@ function funct6() {
 
     //the user is prompted for a number. That string is converted to an integer
     //using JSON.parse().
-    var answer = prompt('How many years have I been playing Pokemon? You have ' + guesses + ' guesses left.');
+    var answer = parseInt(prompt('How many years have I been playing Pokemon? You have ' + guesses + ' guesses left.'));
     console.log(answer);
-    var answer = JSON.parse(answer);
+
+    //answer = JSON.parse(answer);
     console.log('User\'s guess is ' + answer + '.');
 
     //should the user guess correctly the loop ends and a correct answer is
@@ -124,7 +125,7 @@ function funct6() {
       guessing = false;
       correct++;
       console.log('comparison answer=20 happens');
-    }
+      }
 
     //when the user's guess is too high guesses is reduced by 1 and they recieve
     //an alert.
@@ -155,8 +156,9 @@ function funct7() {
   pokemon.push('mew', 'magnemite', 'magnezone', 'magneton', 'drowsee');
   console.log(pokemon);
   while (guesses > 0) {
-    var answer = prompt('Can you guess one of my favorite Pokemon?');
-    answer = answer.toLowerCase();
+    var answer = prompt('Can you guess one of my favorite Pokemon?').toLowerCase();
+
+    //answer = answer.toLowerCase();
     if (pokemon.indexOf(answer) === -1) {
       guesses--;
       console.log(guesses + ': user guess');
@@ -182,4 +184,4 @@ funct5();
 funct6();
 funct7();
 
-document.write('Congratuations! You got ' + correct + ' out of 7 answers correct!');
+document.write('Congratulations! You got ' + correct + ' out of 7 answers correct!');
